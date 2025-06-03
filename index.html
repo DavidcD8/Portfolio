@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#"><img src="images/branding.png" alt="Hero" class="branding" /></a>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/me.jpg" alt="Hero" class="hero-image" />
+        <div class="hero-text">
+            <h2>Hi, I'm David</h2>
+            <p>I'm a passionate developer creating elegant and efficient web applications, working equally on both
+                front-end and back-end development.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a software developer with a love for clean code and building meaningful applications. With a background
+            in front-end and back-end development, I enjoy solving real-world problems using technology.
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-leaf"></i> Django</li> <!-- Django has no official icon, leaf is often used -->
+            <li><i class="fas fa-code"></i> C++</li> <!-- No official icon, use code icon -->
+            <li><i class="fab fa-git-alt"></i> Git</li>
+        </ul>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Little Lemon API</h3>
+                <p>A RESTful API for Little Lemon restaurant with full CRUD, role-based access, and order management.
+                </p>
+                <a href="https://github.com/DavidcD8/LITTLE_LEMON_CAPSTONE_API/blob/main/README.md"
+                    class="project-link">
+                    View API Repository
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <h3>Crypto Wallet: Cryptocurrency Trading Simulation</h3>
+                <p>Simulation platform built in C++ to simulate buying and selling of cryptocurrencies.</p>
+                <a href="https://github.com/DavidcD8/Crypto-Wallet" class="project-link">
+                    View Code Repository
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>ElectgroniXpress</h3>
+                <p>A dynamic e-commerce platform tailored for buying and selling electronics.</p>
+                <a href="https://github.com/DavidcD8/ElectroniXpress" class="project-link">
+                    View Project Details
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xvgrodwp" method="POST" target="_blank">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Download CV Button -->
+        <div style="margin-top: 20px;">
+            <a href="assets/David_Cuevas_Resume.docx" download class="download-btn">Download CV</a>
+        </div>
+
+    </section>
+
+    <script>
+        document.querySelector('.contact form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            const name = event.target.querySelector('input[placeholder="Your Name"]').value;
+            const email = event.target.querySelector('input[placeholder="Your Email"]').value;
+            const message = event.target.querySelector('textarea[placeholder="Your Message"]').value;
+
+            if (name && email && message) {
+                alert(`Thank you, ${name}! Your message has been sent.`);
+                event.target.reset(); // Clear the form fields
+            } else {
+                alert('Please fill out all fields before submitting.');
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 David Cuevas. All rights reserved.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top" title="Back to top">
+        ↑ Back to Top</a>
+
+</body>
+
+</html>

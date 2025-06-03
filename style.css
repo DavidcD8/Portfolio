@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans 3', sans-serif;
+  /* Base font */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero h1,
+.hero h2,
+.about h2,
+.projects h2 {
+  font-family: 'Nunito', sans-serif;
+  /* Use Nunito for headings */
+}
+
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 400;
+  /* Normal text */
+
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4c12a1;
+  font-weight: 600;
+
+}
+
+.navbar a:hover {
+  color: #dfab19;
+  transition: color 0.3s ease-in;
+}
+
+
+
+/* Header image */
+
+.branding {
+  max-width: 60px;
+  flex: 0 0 60px;
+  margin-right: 40px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: #eee;
+}
+
+.hero h1 {
+  font-weight: 700;
+  /* Bold for title */
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 250px;
+  border-radius: 1%;
+  margin-right: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+}
+
+
+/* About */
+.about {
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.about h2 {
+  color: #4c12a1;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills {
+  padding: 60px 40px;
+  background: #f9f9f9;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  color: #4c12a1;
+}
+
+.skills li {
+  background: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.skills ul li i {
+  margin-right: 8px;
+  color: #ff5722;
+  /* Example color */
+  font-size: 1.2em;
+}
+
+/* Projects */
+.projects {
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.project-link:hover {
+  color: #4c12a1;
+}
+
+
+/* Contact */
+.contact {
+  padding: 60px 40px;
+  background: #f9f9f9;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #3b3b3b;
+  color: #fff;
+  box-shadow: 0 1px 2px #3b3b3b;
+  border-radius: 4px;
+  border: none;
+}
+
+button:hover {
+  transition: 0.3s ease-in;
+  background:  #0056b3;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #3b3b3b;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+
+
+/* Footer */
+footer {
+  padding: 20px 40px;
+  background: #4c12a1;
+  color: #fff;
+  text-align: center;
+}
