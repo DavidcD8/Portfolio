@@ -198,7 +198,7 @@ button {
 
 button:hover {
   transition: 0.3s ease-in;
-  background:  #0056b3;
+  background: #0056b3;
 }
 
 .download-btn {
@@ -216,7 +216,6 @@ button:hover {
 .download-btn:hover {
   background-color: #0056b3;
 }
-
 
 
 
@@ -247,4 +246,129 @@ footer {
   background: #4c12a1;
   color: #fff;
   text-align: center;
+}
+
+
+/* Tablet and below (max-width 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    gap: 20px;
+
+  }
+
+  .navbar {
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    /* center links */
+    margin-top: 10px;
+    margin-left: 0;
+    /* reset to zero */
+  }
+
+  .branding {
+    margin-right: 0px;
+
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin: 20px 0 0 0;
+    max-width: 200px;
+  }
+
+  .hero-text {
+    flex: unset;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .skills ul {
+    justify-content: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact form {
+    max-width: 100%;
+  }
+}
+
+/* Mobile phones (max-width 480px) */
+@media (max-width: 480px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 15px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .branding {
+    max-width: 50px;
+    flex: 0 0 50px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero-image {
+    max-width: 150px;
+    margin: 15px 0 0 0;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    padding: 30px 15px;
+  }
+
+  .skills ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact form {
+    gap: 10px;
+  }
+
+  button,
+  .download-btn {
+    width: 100%;
+  }
+
+  .back-to-top {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
 }
