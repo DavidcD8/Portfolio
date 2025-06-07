@@ -11,6 +11,74 @@
 html {
   scroll-behavior: smooth;
 }
+ 
+/* Dark mode styles */
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+
+#changeMe:hover {
+ background:#f4f4f4;
+}
+
+ 
+.icon-button:focus {
+  outline: none;
+}
+
+.icon-button i {
+  pointer-events: none;
+}
+
+
+body.dark-mode {
+  background-color: #121212; /* Very dark gray/black */
+  color: #ddd; /* Light gray text */
+}
+
+ 
+body.dark-mode section,
+body.dark-mode footer {
+  background-color: #1e1e1e; /* Dark grey backgrounds for sections */
+  color: #ccc; /* Slightly lighter text */
+}
+body.dark-mode header {
+  background-color: #343434; /* Dark grey backgrounds for sections */
+ }
+
+body.dark-mode a  {
+  background-color: #343434; /* Dark grey backgrounds for sections */
+  color: #f4f4f4; /* Soft purple links */
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #ddd;
+  border: 1px solid #555;
+}
+
+body.dark-mode .project-card {
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+
+
 
 .hero h1,
 .hero h2,
@@ -33,7 +101,7 @@ body {
 /* Header */
 header {
   background: #fff;
-  padding: 20px 40px;
+  padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
